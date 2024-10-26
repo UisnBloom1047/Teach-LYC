@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Teach-LYC😝</title>
+</head>
+
+<body>
+  <div style="text-align:center;"><h1><b>ZY-LYC-平平无奇的博客🆕</b></h1></div>
+  <script>
+    window.onload = function starttime() {
+      time(document.getElementsByTagName('h1')[0], '2024/5/19');
+      var ptimer = setTimeout(starttime, 1000);
+    }
+
+    function time(obj, futimg) {
+      var nowtime = new Date().getTime();
+      var futruetime = new Date(futimg).getTime();
+      var msec = nowtime - futruetime;
+      var time = (msec / 1000);
+      var day = parseInt(time / 86400);
+      var hour = parseInt(time / 3600) - 24 * day;
+      var minute = parseInt(time % 3600 / 60);
+      var second = parseInt(time % 60);
+      obj.innerHTML = "Teach已上线" + day + "天" + hour + "小时" + minute + "分" + second + "秒😝";
+    }
+  </script>
+  <a href="https://www.lyc754667.top">
+          <button>作者网站</button>
+  		<a href="https://afdian.net/a/lyc754667">
+  		        <button>支持作者网站</button>
+</body>
+
+</html>
